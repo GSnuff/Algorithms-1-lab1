@@ -219,6 +219,4 @@ public class Percolation {
     public boolean percolates() {
         return percolationConnectGrid.connected(0, side * side + 1);
     }
-
-
 }
