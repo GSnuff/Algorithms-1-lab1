@@ -5,7 +5,7 @@ public class PercolationStats {
 
     final private int gridSize;
     final private int trialNum;
-    private double[] thresholds;
+    final private double[] thresholds;
 
 
     private double getThreshold(Percolation grid) {
