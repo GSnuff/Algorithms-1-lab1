@@ -2,10 +2,10 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
 
-    final private int side;
-    final private WeightedQuickUnionUF percolationConnectGrid;
-    final private WeightedQuickUnionUF connectGrid;
-    final private boolean[][] stateGrid;
+    private final int side;
+    private final WeightedQuickUnionUF percolationConnectGrid;
+    private final WeightedQuickUnionUF connectGrid;
+    private final boolean[][] stateGrid;
 
     private void indexCheck(int row, int col) {
         if (row <= 0 || row > side) {
