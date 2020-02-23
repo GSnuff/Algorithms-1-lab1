@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4c8320f6-099f-4b26-90d4-97eb16c0b772" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/percolation/Percolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/percolation/Percolation.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <workItem from="1582280397549" duration="29532000" />
       <workItem from="1582460460189" duration="13364000" />
       <workItem from="1582487088425" duration="96000" />
-      <workItem from="1582487210833" duration="8180000" />
+      <workItem from="1582487210833" duration="8490000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed some bugs (methods that throws exceptions)">
       <created>1582488676823</created>
@@ -174,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582494056788</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Improved perfomance, now numberOfOpenSites() doesn't use the loop">
+      <created>1582496260802</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582496260802</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +197,8 @@
     <MESSAGE value="Fixed bug when we create one site." />
     <MESSAGE value="Really fixed that bug." />
     <MESSAGE value="Fixed a bug with the [n][n]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug with the [n][n]" />
+    <MESSAGE value="Improved perfomance, now numberOfOpenSites() doesn't use the loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved perfomance, now numberOfOpenSites() doesn't use the loop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="72" key="#PercolationStats" timestamp="1582413676277">
@@ -211,10 +217,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="284" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1582243593931" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1582494055806">
+    <state x="390" y="0" key="CommitChangelistDialog2" timestamp="1582496259745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582494055806" />
+    <state x="390" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582496259745" />
     <state width="1493" height="244" key="GridCell.Tab.0.bottom" timestamp="1582496171726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
