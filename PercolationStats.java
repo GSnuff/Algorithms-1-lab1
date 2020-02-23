@@ -4,8 +4,8 @@ import edu.princeton.cs.algs4.StdStats;
 public class PercolationStats {
 
     private Percolation Grid;
-    private int gridSize;
-    private int trialNum;
+    final private int gridSize;
+    final private int trialNum;
     private double[] thresholds;
 
 
