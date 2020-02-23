@@ -43,14 +43,9 @@ public class PercolationStats {
 
     // sample mean of percolation threshold
     public double mean() {
-//
-//        double thresholdSum = 0f;
-//        for (int i = 0; i < trialNum; ++i) {
-//            thresholdSum += thresholds[i];
-//        }
-//        return thresholdSum / trialNum;
         return StdStats.mean(thresholds);
     }
+
 
     //
     // sample standard deviation of percolation threshold
@@ -59,16 +54,6 @@ public class PercolationStats {
         if (trialNum == 1) {
             return Double.NaN;
         }
-
-//        double mean = mean();
-//        double squaredStddev = 0f;
-//
-//        for (int i = 0; i < trialNum; ++i) {
-//            squaredStddev += ((thresholds[i] - mean) * (thresholds[i] - mean)) /
-//                    (trialNum - 1);
-//        }
-//        StdStats.
-//        return Math.sqrt(squaredStddev);
         return StdStats.stddev(thresholds);
     }
 
