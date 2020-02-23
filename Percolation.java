@@ -117,7 +117,7 @@ public class Percolation {
                         else {
                             if (isOpen(row, col - 1)) {
                                 percolationConnectGrid.union(getIndex(row, col), getIndex(row, col - 1));
-                                connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                                connectGrid.union(getIndex(row, col), getIndex(row, col-1));
                             }
                             if (isOpen(row - 1, col)) {
                                 percolationConnectGrid.union(getIndex(row, col), getIndex(row - 1, col));

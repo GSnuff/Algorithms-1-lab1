@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c8320f6-099f-4b26-90d4-97eb16c0b772" name="Default Changelist" comment="" />
+    <list default="true" id="4c8320f6-099f-4b26-90d4-97eb16c0b772" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +94,7 @@
       <workItem from="1582280397549" duration="29532000" />
       <workItem from="1582460460189" duration="13364000" />
       <workItem from="1582487088425" duration="96000" />
-      <workItem from="1582487210833" duration="5447000" />
+      <workItem from="1582487210833" duration="5839000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed some bugs (methods that throws exceptions)">
       <created>1582488676823</created>
@@ -156,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582493370420</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Really fixed that bug.">
+      <created>1582493515271</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582493515271</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +182,8 @@
     <MESSAGE value="Changes order of method declaration." />
     <MESSAGE value="Changed using of stddev() and mean() for once." />
     <MESSAGE value="Fixed bug when we create one site." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug when we create one site." />
+    <MESSAGE value="Really fixed that bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Really fixed that bug." />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="72" key="#PercolationStats" timestamp="1582413676277">
@@ -191,26 +202,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="284" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1582243593931" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1582493369456">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1582493514323">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582493369456" />
-    <state width="1493" height="244" key="GridCell.Tab.0.bottom" timestamp="1582493495803">
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582493514323" />
+    <state width="1493" height="244" key="GridCell.Tab.0.bottom" timestamp="1582493520411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582493495803" />
-    <state width="1493" height="244" key="GridCell.Tab.0.center" timestamp="1582493495802">
+    <state width="1493" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582493520411" />
+    <state width="1493" height="244" key="GridCell.Tab.0.center" timestamp="1582493520411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582493495802" />
-    <state width="1493" height="244" key="GridCell.Tab.0.left" timestamp="1582493495802">
+    <state width="1493" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582493520411" />
+    <state width="1493" height="244" key="GridCell.Tab.0.left" timestamp="1582493520411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582493495802" />
-    <state width="1493" height="244" key="GridCell.Tab.0.right" timestamp="1582493495802">
+    <state width="1493" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582493520411" />
+    <state width="1493" height="244" key="GridCell.Tab.0.right" timestamp="1582493520411">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582493495802" />
+    <state width="1493" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582493520411" />
     <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1582422883415">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
