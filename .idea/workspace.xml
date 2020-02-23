@@ -1,7 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c8320f6-099f-4b26-90d4-97eb16c0b772" name="Default Changelist" comment="" />
+    <list default="true" id="4c8320f6-099f-4b26-90d4-97eb16c0b772" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/_lift.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lift/algs4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lift/checkstyle-coursera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lift/checkstyle-lift.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lift/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lift/introcs.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lift/spotbugs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lift/stdlib.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithms, Part I.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CREDITS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Computer Science.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InteractivePercolationVisualizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PercolationStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PercolationVisualizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/greeting57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/greeting57.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heart25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heart25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input1-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input1-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input10-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input10-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input2-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input2-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input8-dups.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input8-dups.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input8-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input8-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java60.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jerry47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jerry47.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.idea/libraries/_lift.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.lift/algs4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.lift/checkstyle-coursera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.lift/checkstyle-lift.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.lift/checkstyle-suppressions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.lift/introcs.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.lift/spotbugs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/.lift/stdlib.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/Algorithms, Part I.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/CREDITS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/Computer Science.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/InteractivePercolationVisualizer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/Percolation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/PercolationStats.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/PercolationVisualizer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/greeting57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/greeting57.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/heart25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/heart25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input1-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input1-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input10-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input10-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input2-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input2-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input8-dups.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input8-dups.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input8-no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input8-no.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/input8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/java60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/java60.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/jerry47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/jerry47.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/percolation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/sedgewick60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/sedgewick60.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/snake101.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/snake101.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/snake13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/snake13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/wayne98.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/percolation/wayne98.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/percolation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sedgewick60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sedgewick60.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake101.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake101.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wayne98.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wayne98.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +154,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XyqtEpaRYGe9dCZxMIPkC9zLjw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,6 +166,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -83,7 +225,7 @@
       <workItem from="1582119831367" duration="15760000" />
       <workItem from="1582225532730" duration="7388000" />
       <workItem from="1582280397549" duration="29532000" />
-      <workItem from="1582460460189" duration="11227000" />
+      <workItem from="1582460460189" duration="11513000" />
     </task>
     <servers />
   </component>
