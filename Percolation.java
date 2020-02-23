@@ -22,8 +22,6 @@ public class Percolation {
         }
         connectGrid = new WeightedQuickUnionUF(side * side + 1);
         percolationConnectGrid = new WeightedQuickUnionUF(side * side + 2);
-//        connectUpperVNode();
-//        connectBottomVNode();
     }
 
 

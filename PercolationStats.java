@@ -6,6 +6,8 @@ public class PercolationStats {
     private final int gridSize;
     private final int trialNum;
     private final double[] thresholds;
+    private final double mean;
+    private final double standardDev;
 
     // perform independent trials on an n-by-n grid
     public PercolationStats(int n, int trials) {
@@ -20,7 +22,18 @@ public class PercolationStats {
             Percolation iGrid = new Percolation(n);
             thresholds[i] = getThreshold(iGrid);
         }
+
+        mean = StdStats.mean(thresholds);
+        standardDev = devCalc(thresholds);
     }
+
+    private double devCalc(double[] arr) {
+        if (trialNum == 1) {
+            return Double.NaN;
+        }
+        return StdStats.stddev(thresholds);
+    }
+
 
     private double getThreshold(Percolation grid) {
         int randRow;
@@ -41,30 +54,24 @@ public class PercolationStats {
 
     // sample mean of percolation threshold
     public double mean() {
-        return StdStats.mean(thresholds);
+        return mean;
     }
 
-
-    //
     // sample standard deviation of percolation threshold
     public double stddev() {
-
-        if (trialNum == 1) {
-            return Double.NaN;
-        }
-        return StdStats.stddev(thresholds);
+        return standardDev;
     }
 
     //
 //    // low endpoint of 95% confidence interval
     public double confidenceLo() {
-        return mean() - (1.96 * stddev()) /
+        return mean() - (1.96 * standardDev) /
                 Math.sqrt(trialNum);
     }
 
     //    // high endpoint of 95% confidence interval
     public double confidenceHi() {
-        return mean() + (1.96 * stddev()) /
+        return mean() + (1.96 * standardDev) /
                 Math.sqrt(trialNum);
     }
 
@@ -77,11 +84,11 @@ public class PercolationStats {
         PercolationStats test = new PercolationStats(n, trials);
         System.out.print("mean                        = ");
         System.out.print(test.mean());
-        System.out.println("");
+        System.out.println();
 
         System.out.print("stddev                      = ");
         System.out.print(test.stddev());
-        System.out.println("");
+        System.out.println();
 
         System.out.print("95% confidence interval     = [");
         System.out.print(test.confidenceLo());
