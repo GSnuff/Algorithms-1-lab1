@@ -6,6 +6,7 @@ public class Percolation {
     private final WeightedQuickUnionUF percolationConnectGrid;
     private final WeightedQuickUnionUF connectGrid;
     private final boolean[][] stateGrid;
+    private int numOfOpenSites = 0;
 
     // creates n-by-n grid, with all sites initially blocked
     public Percolation(int n) {
@@ -42,7 +43,13 @@ public class Percolation {
     // opens the site (row, col) if it is not open already
     public void open(int row, int col) {
         indexCheck(row, col);
-        stateGrid[row - 1][col - 1] = true;
+
+        if (stateGrid[row - 1][col - 1]) {
+            return;
+        }
+
+        stateGrid[row-1][col-1] = true;
+        numOfOpenSites += 1;
 
         if (side > 1) {
             if (row - 1 > 0) {
@@ -201,20 +208,19 @@ public class Percolation {
 
     // returns the number of open sites
     public int numberOfOpenSites() {
-        int num = 0;
-
-        for (int i = 0; i < side; ++i) {
-            for (int j = 0; j < side; ++j) {
-                if (stateGrid[i][j]) {
-                    ++num;
-                }
-            }
-        }
-        return num;
+      return numOfOpenSites;
     }
 
     // does the system percolate?
     public boolean percolates() {
         return percolationConnectGrid.connected(0, side * side + 1);
+    }
+
+
+    public static void main(String[] args) {
+        Percolation test = new Percolation(10);
+        test.open(1,1);
+        System.out.println(test.isOpen(1,1));
+        System.out.println(test.numberOfOpenSites());
     }
 }
