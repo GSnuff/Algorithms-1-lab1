@@ -181,7 +181,7 @@ public class Percolation {
             }
         } else {
             percolationConnectGrid.union(0, getIndex(1, 1));
-            percolationConnectGrid.union(getIndex(side, side), percolationConnectGrid.count() - 1);
+            percolationConnectGrid.union(getIndex(side, side), side * side - 1);
             connectGrid.union(0, getIndex(1, 1));
         }
     }
