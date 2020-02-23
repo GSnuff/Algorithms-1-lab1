@@ -7,6 +7,20 @@ public class PercolationStats {
     private final int trialNum;
     private final double[] thresholds;
 
+    // perform independent trials on an n-by-n grid
+    public PercolationStats(int n, int trials) {
+        if (n <= 0 || trials <= 0) {
+            throw new IllegalArgumentException("Negative numbers in arguments");
+        }
+        gridSize = n;
+        trialNum = trials;
+
+        thresholds = new double[trials];
+        for (int i = 0; i < trials; ++i) {
+            Percolation iGrid = new Percolation(n);
+            thresholds[i] = getThreshold(iGrid);
+        }
+    }
 
     private double getThreshold(Percolation grid) {
         int randRow;
@@ -24,21 +38,6 @@ public class PercolationStats {
         return (double) grid.numberOfOpenSites() / (gridSize * gridSize);
     }
 
-
-    // perform independent trials on an n-by-n grid
-    public PercolationStats(int n, int trials) {
-        if (n <= 0 || trials <= 0) {
-            throw new IllegalArgumentException("Negative numbers in arguments");
-        }
-        gridSize = n;
-        trialNum = trials;
-
-        thresholds = new double[trials];
-        for (int i = 0; i < trials; ++i) {
-            Percolation iGrid = new Percolation(n);
-            thresholds[i] = getThreshold(iGrid);
-        }
-    }
 
     // sample mean of percolation threshold
     public double mean() {

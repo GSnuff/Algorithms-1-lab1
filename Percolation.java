@@ -7,21 +7,6 @@ public class Percolation {
     private final WeightedQuickUnionUF connectGrid;
     private final boolean[][] stateGrid;
 
-    private void indexCheck(int row, int col) {
-        if (row <= 0 || row > side) {
-            throw new IllegalArgumentException("The row index is out of range");
-        }
-        if (col <= 0 || col > side) {
-            throw new IllegalArgumentException("The col index is out of range");
-        }
-    }
-
-    // get index to connect 2D [n][n]array with 1D [n*n]array
-    private int getIndex(int row, int col) {
-        return side * (row - 1) + col;
-    }
-
-
     // creates n-by-n grid, with all sites initially blocked
     public Percolation(int n) {
         if (n <= 0) {
@@ -39,6 +24,21 @@ public class Percolation {
         percolationConnectGrid = new WeightedQuickUnionUF(side * side + 2);
 //        connectUpperVNode();
 //        connectBottomVNode();
+    }
+
+
+    private void indexCheck(int row, int col) {
+        if (row <= 0 || row > side) {
+            throw new IllegalArgumentException("The row index is out of range");
+        }
+        if (col <= 0 || col > side) {
+            throw new IllegalArgumentException("The col index is out of range");
+        }
+    }
+
+    // get index to connect 2D [n][n]array with 1D [n*n]array
+    private int getIndex(int row, int col) {
+        return side * (row - 1) + col;
     }
 
     // opens the site (row, col) if it is not open already
