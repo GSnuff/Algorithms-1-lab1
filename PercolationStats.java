@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats {
 
-    private final int gridSize;
+    private final int sideLen;
     private final int trialNum;
     private final double[] thresholds;
     private final double mean;
@@ -14,7 +14,7 @@ public class PercolationStats {
         if (n <= 0 || trials <= 0) {
             throw new IllegalArgumentException("Negative numbers in arguments");
         }
-        gridSize = n;
+        sideLen = n;
         trialNum = trials;
 
         thresholds = new double[trials];
@@ -40,15 +40,17 @@ public class PercolationStats {
         int randCol;
 
         while (!grid.percolates()) {
-            randRow = StdRandom.uniform(gridSize);
-            randCol = StdRandom.uniform(gridSize);
+            randRow = StdRandom.uniform(sideLen);
+            randCol = StdRandom.uniform(sideLen);
             ++randRow;
             ++randCol;
             if (!grid.isOpen(randRow, randCol))
                 grid.open(randRow, randCol);
         }
 
-        return (double) grid.numberOfOpenSites() / (gridSize * gridSize);
+        return (double) grid.numberOfOpenSites() /
+                // -----------------------------
+                        (sideLen * sideLen);
     }
 
 
@@ -62,17 +64,18 @@ public class PercolationStats {
         return standardDev;
     }
 
-    //
-//    // low endpoint of 95% confidence interval
+    // low endpoint of 95% confidence interval
     public double confidenceLo() {
-        return mean() - (1.96 * standardDev) /
-                Math.sqrt(trialNum);
+        return (mean() - (1.96 * standardDev)) /
+                // ---------------------------
+                     Math.sqrt(trialNum);
     }
 
-    //    // high endpoint of 95% confidence interval
+    // high endpoint of 95% confidence interval
     public double confidenceHi() {
-        return mean() + (1.96 * standardDev) /
-                Math.sqrt(trialNum);
+        return (mean() + (1.96 * standardDev)) /
+                // ---------------------------
+                    Math.sqrt(trialNum);
     }
 
 

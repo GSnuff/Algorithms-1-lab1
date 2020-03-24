@@ -27,8 +27,8 @@ public class Percolation {
     * Hope that helps.
     */
 
-    private final int side;
-    private final WeightedQuickUnionUF percolationConnectGrid;
+    private final int sideLen;
+    private final WeightedQuickUnionUF percGrid;
     private final WeightedQuickUnionUF connectGrid;
     private final boolean[][] stateGrid;
     private int numOfOpenSites = 0;
@@ -40,37 +40,36 @@ public class Percolation {
         if (n <= 0) {
             throw new IllegalArgumentException("The argument is <= 0");
         }
-        side = n;
+        sideLen = n;
         stateGrid = new boolean[n][n];
 
-        for (int i = 0; i < side; ++i) {
-            for (int j = 0; j < side; ++j) {
+        for (int i = 0; i < sideLen; ++i) {
+            for (int j = 0; j < sideLen; ++j) {
                 stateGrid[i][j] = false;
             }
         }
-        connectGrid = new WeightedQuickUnionUF(side * side + 1);
-        percolationConnectGrid = new WeightedQuickUnionUF(side * side + 2);
-        botVNode = side * side + 1;
+        connectGrid = new WeightedQuickUnionUF(sideLen * sideLen + 1);
+        percGrid = new WeightedQuickUnionUF(sideLen * sideLen + 2);
+        botVNode = sideLen * sideLen + 1;
     }
 
-
-    private void indexCheck(int row, int col) {
-        if (row <= 0 || row > side) {
+    private void isIndex(int row, int col) {
+        if (row <= 0 || row > sideLen) {
             throw new IllegalArgumentException("The row index is out of range");
         }
-        if (col <= 0 || col > side) {
+        if (col <= 0 || col > sideLen) {
             throw new IllegalArgumentException("The col index is out of range");
         }
     }
 
     // get index to connect 2D [n][n]array with 1D [n*n]array
     private int getIndex(int row, int col) {
-        return side * (row - 1) + col;
+        return sideLen * (row - 1) + col;
     }
 
     // opens the site (row, col) if it is not open already
     public void open(int row, int col) {
-        indexCheck(row, col);
+        isIndex(row, col);
 
         if (stateGrid[row - 1][col - 1]) {
             return;
@@ -79,157 +78,166 @@ public class Percolation {
         stateGrid[row - 1][col - 1] = true;
         numOfOpenSites += 1;
 
-        if (side > 1) {
+        if (sideLen > 1) {
             if (row - 1 > 0) {
-                if (row - 1 < side - 1) {
+                if (row - 1 < sideLen - 1) {
                     if (col - 1 > 0) {
-                        if (col - 1 < side - 1) {
+                        if (col - 1 < sideLen - 1) {
                             // inside
                             if (isOpen(row + 1, col)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row + 1, col));
+                                percGrid.union(getIndex(row, col), getIndex(row + 1, col));
                                 connectGrid.union(getIndex(row, col), getIndex(row + 1, col));
                             }
                             if (isOpen(row - 1, col)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                                percGrid.union(getIndex(row, col), getIndex(row - 1, col));
                                 connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
                             }
                             if (isOpen(row, col - 1)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row, col - 1));
+                                percGrid.union(getIndex(row, col), getIndex(row, col - 1));
                                 connectGrid.union(getIndex(row, col), getIndex(row, col - 1));
                             }
                             if (isOpen(row, col + 1)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row, col + 1));
+                                percGrid.union(getIndex(row, col), getIndex(row, col + 1));
                                 connectGrid.union(getIndex(row, col), getIndex(row, col + 1));
                             }
-                        } // [1..n-2][n-1]
-                        else {
+                        } else {
+                            // [1..n-2][n-1]
                             if (isOpen(row + 1, col)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row + 1, col));
+                                percGrid.union(getIndex(row, col), getIndex(row + 1, col));
                                 connectGrid.union(getIndex(row, col), getIndex(row + 1, col));
                             }
                             if (isOpen(row - 1, col)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                                percGrid.union(getIndex(row, col), getIndex(row - 1, col));
                                 connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
                             }
                             if (isOpen(row, col - 1)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row, col - 1));
+                                percGrid.union(getIndex(row, col), getIndex(row, col - 1));
                                 connectGrid.union(getIndex(row, col), getIndex(row, col - 1));
                             }
                         }
-                    }//[1..n-2][0]
-                    else {
+                    } else {
+                        //[1..n-2][0]
                         if (isOpen(row + 1, col)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row + 1, col));
+                            percGrid.union(getIndex(row, col), getIndex(row + 1, col));
                             connectGrid.union(getIndex(row, col), getIndex(row + 1, col));
                         }
                         if (isOpen(row - 1, col)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                            percGrid.union(getIndex(row, col), getIndex(row - 1, col));
                             connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
                         }
                         if (isOpen(row, col + 1)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row, col + 1));
-                            connectGrid.union(getIndex(row, col), getIndex(row, col + 1));
-                        }
-                    }
-                } // row - 1 == side - 1
-                else {
-                    percolationConnectGrid.union(getIndex(row, col), botVNode);
-                    if (col - 1 > 0) {
-                        if (col - 1 < side - 1) {
-                            if (isOpen(row, col - 1)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row, col - 1));
-                                connectGrid.union(getIndex(row, col), getIndex(row, col - 1));
-                            }
-                            if (isOpen(row, col + 1)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row, col + 1));
-                                connectGrid.union(getIndex(row, col), getIndex(row, col + 1));
-                            }
-                            if (isOpen(row - 1, col)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row - 1, col));
-                                connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
-                            }
-                        } // [n-1][n-1]
-                        else {
-                            if (isOpen(row, col - 1)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row, col - 1));
-                                connectGrid.union(getIndex(row, col), getIndex(row, col - 1));
-                            }
-                            if (isOpen(row - 1, col)) {
-                                percolationConnectGrid.union(getIndex(row, col), getIndex(row - 1, col));
-                                connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
-                            }
-                        }
-                    } // [n-1][0]
-                    else {
-                        if (isOpen(row - 1, col)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row - 1, col));
-                            connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
-                        }
-                        if (isOpen(row, col + 1)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row, col + 1));
+                            percGrid.union(getIndex(row, col), getIndex(row, col + 1));
                             connectGrid.union(getIndex(row, col), getIndex(row, col + 1));
                         }
                     }
                 }
-            } // [0][i]
+                else {
+                    // [i][n-1]
+                    percGrid.union(getIndex(row, col), botVNode);
+                    if (col - 1 > 0) {
+                        // [1..n-2][n-1]
+                        if (col - 1 < sideLen - 1) {
+                            if (isOpen(row, col - 1)) {
+                                percGrid.union(getIndex(row, col), getIndex(row, col - 1));
+                                connectGrid.union(getIndex(row, col), getIndex(row, col - 1));
+                            }
+                            if (isOpen(row, col + 1)) {
+                                percGrid.union(getIndex(row, col), getIndex(row, col + 1));
+                                connectGrid.union(getIndex(row, col), getIndex(row, col + 1));
+                            }
+                            if (isOpen(row - 1, col)) {
+                                percGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                                connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                            }
+                        }
+                        else {
+                            // [n-1][n-1]
+                            if (isOpen(row, col - 1)) {
+                                percGrid.union(getIndex(row, col), getIndex(row, col - 1));
+                                connectGrid.union(getIndex(row, col), getIndex(row, col - 1));
+                            }
+                            if (isOpen(row - 1, col)) {
+                                percGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                                connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                            }
+                        }
+                    }
+                    else {
+                        // [n-1][0]
+                        if (isOpen(row - 1, col)) {
+                            percGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                            connectGrid.union(getIndex(row, col), getIndex(row - 1, col));
+                        }
+                        if (isOpen(row, col + 1)) {
+                            percGrid.union(getIndex(row, col), getIndex(row, col + 1));
+                            connectGrid.union(getIndex(row, col), getIndex(row, col + 1));
+                        }
+                    }
+                }
+            }
             else {
-                percolationConnectGrid.union(upVNode, getIndex(row, col));
+                // [0][i]
+                percGrid.union(upVNode, getIndex(row, col));
                 connectGrid.union(upVNode, getIndex(row, col));
-                // [0][0..n-1]
+
                 if (col - 1 > 0) {
-                    // [0][1..n-2]
-                    if (col - 1 < side - 1) {
+                    // [0][0..n-1]
+                    if (col - 1 < sideLen - 1) {
+                        // [0][1..n-2]
                         if (isOpen(row, col - 1)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row, col - 1));
+                            percGrid.union(getIndex(row, col), getIndex(row, col - 1));
                             connectGrid.union(getIndex(row, col), getIndex(row, col - 1));
                         }
                         if (isOpen(row, col + 1)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row, col + 1));
+                            percGrid.union(getIndex(row, col), getIndex(row, col + 1));
                             connectGrid.union(getIndex(row, col), getIndex(row, col + 1));
                         }
                         if (isOpen(row + 1, col)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row + 1, col));
+                            percGrid.union(getIndex(row, col), getIndex(row + 1, col));
                             connectGrid.union(getIndex(row, col), getIndex(row + 1, col));
                         }
-                    } // element [0][n-1]
+                    }
                     else {
+                        // element [0][n-1]
                         if (isOpen(row, col - 1)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row, col - 1));
+                            percGrid.union(getIndex(row, col), getIndex(row, col - 1));
                             connectGrid.union(getIndex(row, col), getIndex(row, col - 1));
                         }
                         if (isOpen(row + 1, col)) {
-                            percolationConnectGrid.union(getIndex(row, col), getIndex(row + 1, col));
+                            percGrid.union(getIndex(row, col), getIndex(row + 1, col));
                             connectGrid.union(getIndex(row, col), getIndex(row + 1, col));
                         }
                     }
-                } // element [0][0]
+                }
                 else {
+                    // element [0][0]
                     if (isOpen(row, col + 1)) {
-                        percolationConnectGrid.union(getIndex(row, col), getIndex(row, col + 1));
+                        percGrid.union(getIndex(row, col), getIndex(row, col + 1));
                         connectGrid.union(getIndex(row, col), getIndex(row, col + 1));
                     }
                     if (isOpen(row + 1, col)) {
-                        percolationConnectGrid.union(getIndex(row, col), getIndex(row + 1, col));
+                        percGrid.union(getIndex(row, col), getIndex(row + 1, col));
                         connectGrid.union(getIndex(row, col), getIndex(row + 1, col));
                     }
                 }
             }
         } else {
-            percolationConnectGrid.union(upVNode, getIndex(1, 1));
-            percolationConnectGrid.union(getIndex(1, 1), 2);
+            // sideLen == 1
+            percGrid.union(upVNode, getIndex(1, 1));
+            percGrid.union(getIndex(1, 1), 2);
             connectGrid.union(upVNode, getIndex(1, 1));
         }
     }
 
     // is the site (row, col) open?
     public boolean isOpen(int row, int col) {
-        indexCheck(row, col);
+        isIndex(row, col);
         return stateGrid[row - 1][col - 1];
     }
 
     // is the site (row, col) full?
     public boolean isFull(int row, int col) {
-        indexCheck(row, col);
+        isIndex(row, col);
         return stateGrid[row - 1][col - 1] && connectGrid.connected(upVNode, getIndex(row, col));
 
     }
@@ -241,10 +249,10 @@ public class Percolation {
 
     // does the system percolate?
     public boolean percolates() {
-        return percolationConnectGrid.connected(upVNode, botVNode);
+        return percGrid.connected(upVNode, botVNode);
     }
 
-
+    // test
     public static void main(String[] args) {
         Percolation test = new Percolation(10);
         test.open(1, 1);

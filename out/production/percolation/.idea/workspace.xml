@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4c8320f6-099f-4b26-90d4-97eb16c0b772" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/PercolationStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/percolation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/Percolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/percolation/Percolation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/percolation/PercolationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/percolation/PercolationStats.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1XyqtEpaRYGe9dCZxMIPkC9zLjw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,9 +42,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.PercolationStats">
+  <component name="RunManager" selected="Application.Visualizer">
     <configuration name="InteractiveVizualizer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="InteractivePercolationVisualizer" />
       <module name="percolation" />
@@ -50,7 +55,7 @@
     <configuration name="PercolationStats" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="PercolationStats" />
       <module name="percolation" />
-      <option name="PROGRAM_PARAMETERS" value="200 100" />
+      <option name="PROGRAM_PARAMETERS" value="100 10000" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,22 +98,146 @@
       <workItem from="1582280397549" duration="29532000" />
       <workItem from="1582460460189" duration="13364000" />
       <workItem from="1582487088425" duration="96000" />
-      <workItem from="1582487210833" duration="1264000" />
+      <workItem from="1582487210833" duration="11696000" />
+      <workItem from="1582737809283" duration="1553000" />
+      <workItem from="1583532971552" duration="590000" />
+      <workItem from="1584371178644" duration="583000" />
+      <workItem from="1584723786302" duration="42000" />
+      <workItem from="1584738616404" duration="19000" />
+      <workItem from="1584887121250" duration="1829000" />
+      <workItem from="1584971217557" duration="8000" />
+      <workItem from="1584971235545" duration="825000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed some bugs (methods that throws exceptions)">
+      <created>1582488676823</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582488676823</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed some bugs (code style)">
+      <created>1582489132868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582489132868</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed some bugs (third assignment)">
+      <created>1582489372604</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582489372604</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed grid. grid is never used.">
+      <created>1582489627862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582489627862</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added final to class vars.">
+      <created>1582491057835</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582491057835</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[WARN] Percolation.java:5:11: The modifier 'private' is out of order. The preferred order is ['public', 'protected', 'private', 'abstract', 'static', 'final', 'transient', 'volatile', 'synchronized', 'native', and 'strictfp']. [ModifierOrder]&#10;[WARN] Percolation.java:6:11: The modifier 'private' is out of order. The preferred order is ['public', 'protected', 'private', 'abstract', 'static', 'final', 'transient', 'volatile', 'synchronized', 'native', and 'strictfp']. [ModifierOrder]&#10;[WARN] Percolation.java:7:11: The modifier 'private' is out of order. The preferred order is ['public', 'protected', 'private', 'abstract', 'static', 'final', 'transient', 'volatile', 'synchronized', 'native', and 'strictfp']. [ModifierOrder]&#10;[WARN] Percolation.java:8:11: The modifier 'private' is out of order. The preferred order is ['public', 'protected', 'private', 'abstract', 'static', 'final', 'transient', 'volatile', 'synchronized', 'native', and 'strictfp']. [ModifierOrder]">
+      <created>1582491506756</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582491506756</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes order of method declaration.">
+      <created>1582491740538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582491740538</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changed using of stddev() and mean() for once.">
+      <created>1582492838114</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582492838114</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed bug when we create one site.">
+      <created>1582493370420</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582493370420</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Really fixed that bug.">
+      <created>1582493515271</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582493515271</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed a bug with the [n][n]">
+      <created>1582494056788</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582494056788</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Improved perfomance, now numberOfOpenSites() doesn't use the loop">
+      <created>1582496260802</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582496260802</updated>
+    </task>
+    <task id="LOCAL-00013" summary="The version that gets 100/100 mark.">
+      <created>1582496666118</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582496666118</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added comment about memory usage. The programme doesn't pass the optional test about memory usage.">
+      <created>1582501722808</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582501722808</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed some bugs (methods that throws exceptions)" />
+    <MESSAGE value="Fixed some bugs (code style)" />
+    <MESSAGE value="Fixed some bugs (third assignment)" />
+    <MESSAGE value="Fixed grid. grid is never used." />
+    <MESSAGE value="Added final to class vars." />
+    <MESSAGE value="[WARN] Percolation.java:5:11: The modifier 'private' is out of order. The preferred order is ['public', 'protected', 'private', 'abstract', 'static', 'final', 'transient', 'volatile', 'synchronized', 'native', and 'strictfp']. [ModifierOrder]&#10;[WARN] Percolation.java:6:11: The modifier 'private' is out of order. The preferred order is ['public', 'protected', 'private', 'abstract', 'static', 'final', 'transient', 'volatile', 'synchronized', 'native', and 'strictfp']. [ModifierOrder]&#10;[WARN] Percolation.java:7:11: The modifier 'private' is out of order. The preferred order is ['public', 'protected', 'private', 'abstract', 'static', 'final', 'transient', 'volatile', 'synchronized', 'native', and 'strictfp']. [ModifierOrder]&#10;[WARN] Percolation.java:8:11: The modifier 'private' is out of order. The preferred order is ['public', 'protected', 'private', 'abstract', 'static', 'final', 'transient', 'volatile', 'synchronized', 'native', and 'strictfp']. [ModifierOrder]" />
+    <MESSAGE value="Changes order of method declaration." />
+    <MESSAGE value="Changed using of stddev() and mean() for once." />
+    <MESSAGE value="Fixed bug when we create one site." />
+    <MESSAGE value="Really fixed that bug." />
+    <MESSAGE value="Fixed a bug with the [n][n]" />
+    <MESSAGE value="Improved perfomance, now numberOfOpenSites() doesn't use the loop" />
+    <MESSAGE value="The version that gets 100/100 mark." />
+    <MESSAGE value="Added comment about memory usage. The programme doesn't pass the optional test about memory usage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added comment about memory usage. The programme doesn't pass the optional test about memory usage." />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="72" key="#PercolationStats" timestamp="1582413676277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="485" y="72" key="#PercolationStats/0.0.1536.824@0.0.1536.824" timestamp="1582413676277" />
-    <state x="272" y="32" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582480794636">
+    <state x="272" y="32" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583533409215">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="272" y="32" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582480794636" />
+    <state x="272" y="32" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583533409215" />
     <state x="498" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582413693009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -117,87 +246,91 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="528" y="284" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1582243593931" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1582488675178">
+    <state x="390" y="0" key="CommitChangelistDialog2" timestamp="1582501721893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582488675178" />
-    <state width="1493" height="244" key="GridCell.Tab.0.bottom" timestamp="1582487056320">
+    <state x="390" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582501721893" />
+    <state width="1493" height="244" key="GridCell.Tab.0.bottom" timestamp="1583533561925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582487056320" />
-    <state width="1493" height="244" key="GridCell.Tab.0.center" timestamp="1582487056320">
+    <state width="1493" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583533561925" />
+    <state width="1493" height="244" key="GridCell.Tab.0.center" timestamp="1583533561925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582487056320" />
-    <state width="1493" height="244" key="GridCell.Tab.0.left" timestamp="1582487056319">
+    <state width="1493" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583533561925" />
+    <state width="1493" height="244" key="GridCell.Tab.0.left" timestamp="1583533561925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582487056319" />
-    <state width="1493" height="244" key="GridCell.Tab.0.right" timestamp="1582487056320">
+    <state width="1493" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583533561925" />
+    <state width="1493" height="244" key="GridCell.Tab.0.right" timestamp="1583533561925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582487056320" />
-    <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1582422883415">
+    <state width="1493" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583533561925" />
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1582501788339">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="263" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582422883415" />
-    <state width="1493" height="263" key="GridCell.Tab.1.center" timestamp="1582422883415">
+    <state width="1493" height="263" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582501788339" />
+    <state width="1493" height="263" key="GridCell.Tab.1.center" timestamp="1582501788339">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="263" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582422883415" />
-    <state width="1493" height="263" key="GridCell.Tab.1.left" timestamp="1582422883415">
+    <state width="1493" height="263" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582501788339" />
+    <state width="1493" height="263" key="GridCell.Tab.1.left" timestamp="1582501788339">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="263" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582422883415" />
-    <state width="1493" height="263" key="GridCell.Tab.1.right" timestamp="1582422883415">
+    <state width="1493" height="263" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582501788339" />
+    <state width="1493" height="263" key="GridCell.Tab.1.right" timestamp="1582501788339">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="263" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582422883415" />
+    <state width="1493" height="263" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582501788339" />
     <state x="379" y="79" key="Registry" timestamp="1582487183598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="379" y="79" key="Registry/0.0.1536.824@0.0.1536.824" timestamp="1582487183598" />
-    <state x="277" y="56" key="SettingsEditor" timestamp="1582486686353">
+    <state x="277" y="56" key="SettingsEditor" timestamp="1582498472734">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582486686353" />
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1582487212185">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582498472734" />
+    <state x="581" y="300" key="com.intellij.ide.util.TipDialog" timestamp="1584971217711">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582487212185" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584371178301" />
+    <state x="581" y="300" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584971217711" />
     <state x="341" y="20" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582417932617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="341" y="20" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1582417932617" />
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582491078002">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1582491078002" />
     <state x="463" y="10" width="611" height="804" key="find.popup" timestamp="1582486938441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="10" width="611" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582486938441" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1582487498309">
+    <state x="209" y="34" key="new project wizard" timestamp="1584371759267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="34" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1584371759267" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1582496889622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="96" y="185" key="run.anything.popup.inPresentationMode" timestamp="1582151941971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="96" y="185" key="run.anything.popup.inPresentationMode/0.0.1536.824@0.0.1536.824" timestamp="1582151941971" />
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582487498309" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582487285407">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582496889622" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582738622284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582487285407" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582738622284" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PercolationStats.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PercolationStats.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/PercolationVisualizer.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
